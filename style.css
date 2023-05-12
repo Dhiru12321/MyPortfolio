@@ -25,14 +25,16 @@
     --shadow-color: rgba(0, 0, 0, .7);
 }
 
-html{
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
     font-size: 75.5%;
-    overflow-x: hidden;
-}
-body{
     background: var(--bg-color);
     color: var(--text-color);
-}
+} 
 /* home page design form this line of code */
 .header{
     position: fixed;
@@ -375,8 +377,8 @@ span{
 .portfolio-container .portfolio-box{
     position:relative;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     overflow: hidden;
@@ -592,9 +594,7 @@ textarea{
         font-size: 2rem;
     }
     .home .home-img img{
-        width: 41%;
-        bottom: 0;
-        height: auto;
+        width: 42%;
     }
     .home .profession-container .profession-box{
         right: -9rem;
@@ -628,8 +628,6 @@ textarea{
     }
     .home .home-img img{
         width: 45%;
-        bottom: 0;
-        height: auto;
     }
     .section{
         padding: 5rem 2.5% 1.5rem;
@@ -643,7 +641,7 @@ textarea{
         height: 95rem;
     }
 }
-@media (max-width: 1164px) {
+@media (max-width: 1180px) {
     .header{
         padding: 3rem 6%; 
     }
@@ -654,8 +652,8 @@ textarea{
         font-size: 2.5rem;
     }
     .home .home-img img{
-        right: -5rem;
-        width: 47%;
+        padding-left: 9rem;
+        width: 48%;
     }
     .home .profession-container .profession-box .profession .android{
         padding-right: 40px;
@@ -674,7 +672,7 @@ textarea{
         right: -20rem;
     }
 }
-@media (max-width: 1062px) {
+@media (max-width: 1080px) {
     .header a{
         font-size: 2.3rem;
     }
@@ -685,7 +683,7 @@ textarea{
         padding: 3rem 6%; 
     }
     .home .home-img img{
-        right: -13rem;
+        padding-left: -4rem;
         width: 50%;
     }
     .home .profession-container .profession-box{
@@ -790,7 +788,7 @@ textarea{
         display: none;
     }
     .home{
-        margin-top: 7rem;
+        margin-top: 3rem;
         margin-bottom: 1rem;
         padding: 0 3% 23rem;
         justify-content: center;
@@ -876,7 +874,7 @@ textarea{
     }
     .about-img img{
         width: 65vw;
-/*         margin-top: 7rem; */
+        margin-top: 7rem;
     }
     /* services disigning  */
     .services h2,
@@ -907,7 +905,7 @@ textarea{
         grid-template-columns: 1fr;
     }
 }
-@media (max-width: 414px){
+@media (max-width: 450px){
     html{
         font-size: 50%; 
     }
