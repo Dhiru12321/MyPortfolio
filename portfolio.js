@@ -90,11 +90,11 @@ darkModeIcon.onclick = () => {
         delay: 2000
     }; 
     ScrollReveal().reveal('.header .logo', portfolioScale);
-    //? heading interval delay
-    var headingInterval = {
-        interval: 100 
-    };
-    ScrollReveal().reveal('.header .interval', headingInterval);
+//     //? heading interval delay
+//     var headingInterval = {
+//         interval: 100 
+//     };
+//     ScrollReveal().reveal('.header .interval', headingInterval);
 
     var slideDown = {
         origin: 'top',
